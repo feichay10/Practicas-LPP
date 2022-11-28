@@ -1,0 +1,6 @@
+task :default => :ut
+
+desc "Pruebas unitarias de las funciones vehicles_operations"
+task :ut do
+  sh "ruby -I. test/test_vehicles.rb"
+end

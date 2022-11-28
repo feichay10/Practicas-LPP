@@ -1,0 +1,11 @@
+task :default => :test
+
+desc "Pruebas para car_spec"
+task :test do
+  sh "rspec spec/car_spec.rb"
+end
+
+desc "Pruebas para owners_spec"
+task :test do
+  sh "rspec spec/owners_spec.rb"
+end
